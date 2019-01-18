@@ -1,0 +1,5 @@
+Django==1.11.18
+djangorestframework==3.9.1
+pytz==2018.9
+style==1.1.0
+update==0.0.1
