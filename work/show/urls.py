@@ -7,6 +7,7 @@ from . import views
 
 router = DefaultRouter()
 router.register('test', views.TestView)
+router.register('as', views.ASView)
 
 
 urlpatterns = [

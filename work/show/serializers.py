@@ -18,3 +18,17 @@ class Test(serializers.ModelSerializer):
         )
 
         return request
+
+class AutoServicesSer(serializers.ModelSerializer):
+    class Meta:
+        model = models.AutoServices
+        fields = ('id', 'SERVICES_CHOICES', 'services')
+
+    def create(self, validated_data, **kwargs):
+
+        request = models.AutoServices(kwargs)
+
+        return request
+    """
+    остальная серилизация
+    """
